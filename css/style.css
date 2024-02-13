@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    /* height: 58px; */
+    width: 100vw;
+    background: #2874f0;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 95px;
+    padding: 0 23px;
+    margin-left: 10pc;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.icon {
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    color: #2874f0;
+
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 3px 38px;
+
+}
+
+.btn button {
+    height: 33px;
+    width: 130px;
+    border: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: #2874f0;
+    outline: none;
+    cursor: pointer;
+    background: white;
+
+}
+
+.search input {
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    outline: 0 none;
+    font-size: 14px;
+    height: 36px;
+    width: 34pc;
+}
+
+nav {
+    display: flex;
+
+}
+
+nav ul {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-right: 6pc;
+    justify-content: flex-end;
+
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0 23px;
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+body{
+    overflow-x: hidden;
+}
+.flex-all-center {
+    height: 12vh;
+    width: 100vw;
+    background: #2874f0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+
+.slider {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    margin: 25px 0;
+    justify-content: center;
+   
+
+
+}
+
+.slider img {
+    width: 80vw;
+    height: 36vw;
+}
+
+h2 {
+    margin: 26px 64px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+.cards {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    overflow: auto;
+    
+}
+
+.cards div {
+    padding: 0 14px;
+}
+
+.cards div img {
+    height: 200px;
+}
+
+.lines {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width : 1000px) {
+    body {
+        background: red;
+    }
+    
+    nav {
+        justify-items: center;
+        grid-auto-columns: max-content;
+        display: grid inline;
+        overflow: hidden;
+        margin: 30px -45px;
+    }
+}
